@@ -1,110 +1,129 @@
-
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>manies and wifues</title>
-    <style>
-      body {
-        font-family: 'Arial', sans-serif;
-        background-color: #ffe4e1;
-        color: #333;
-        padding: 30px;
-        text-align: center;
-        position: relative;
-        overflow-x: hidden;
-        overflow-y: auto;
- 
+<head>
+  <title>Omri's Page 💘</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* COVER PAGE */
+    #cover {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #ffd1dc;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    #cover input {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      margin: 10px;
+      width: 250px;
+      text-align: center;
+    }
+
+    #cover button {
+      background-color: #ff4d6d;
+      color: white;
+      font-size: 20px;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    #cover button:hover {
+      background-color: #e63950;
+    }
+
+    #cover h2 {
+      color: #c9184a;
+    }
+
+    /* MAIN CONTENT */
+    #main {
+      display: none;
+      background-color: #ffe4e1;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1, h2 {
+      color: #c9184a;
+    }
+
+    li {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    img {
+      border-radius: 12px;
+      width: 200px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    p {
+      font-style: italic;
+    }
+
+    /* Floating Hearts */
+    .heart {
+      position: fixed;
+      top: -2em;
+      font-size: 24px;
+      color: red;
+      opacity: 0.8;
+      animation: fall 6s linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(120vh);
+        opacity: 0;
       }
+    }
+  </style>
+</head>
 
-      h1, h2 {
-        color: #c9184a;
-      }
+<body>
 
-      li {
-        list-style-type: none;
-        margin: 25px 0;
-      }
+  <!-- MUSIC -->
+  <audio id="love-song" src="love-romantic-hopeful-music-333017.mp3" loop></audio>
 
-      img {
-        border-radius: 12px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        margin-top: 10px;
-      }
+  <!-- COVER PAGE WITH PASSWORD -->
+  <section id="cover">
+    <h2>Enter the secret code to continue 💌</h2>
+    <input id="password" type="password" placeholder="Type the magic word..." />
+    <br />
+    <button onclick="startPage()">Click Me Omri ❤️</button>
+    <p id="error" style="color: red; margin-top: 10px;"></p>
+  </section>
 
-      p {
-        font-style: italic;
-        margin-top: 10px;
-      }
+  <!-- MAIN CONTENT -->
+  <section id="main">
 
-      .heart {
-  position: fixed;
-  top: -2em;
-  color: red;
-  font-size: 24px;
-  animation: fall linear infinite;
-  opacity: 0.8;
-  z-index: -1;
-}
-
-@keyframes fall {
-  to {
-    transform: translateY(120vh);
-    opacity: 0;
-  }
-}
-
-
-.sparkle {
-  position: fixed;
-  top: -2em;
-  font-size: 20px;
-  color: gold;
-  opacity: 0.9;
-  animation: sparkleFall 5s linear infinite;
-  z-index: -1;
-}
-
-@keyframes sparkleFall {
-  to {
-    transform: translateY(120vh);
-    opacity: 0;
-  }
-}
-
-button {
-  background-color: #ffccd5;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin: 20px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-}
-
-
-      
-    </style>
-  </head>
-
-  <body>
-   
-
-     <audio id="loveMusic" loop>
-  <source src="love-romantic-hopeful-music-333017.mp3" type="audio/mpeg" />
-</audio>
-
-<button onclick="document.getElementById('loveMusic').play()">▶️ Play Music</button>
-
-    <h1>boys li lzm ytrbaw</h1>
-    <ul> 
+    <h1>boys li lzm yrbaw</h1>
+    <ul>
       <li>Labib</li>
       <li>Hamza</li>
       <li>Hocine</li>
     </ul>
 
-    <h1>bnat tae zwaj</h1>
+    <h2>bnat tae zwaj</h2>
     <ul>
       <li>wissem</li>
       <li>feriel</li>
@@ -113,118 +132,72 @@ button {
 
     <h2>tsawir MANS AYYYYYYYY</h2>
     <li>
-      <strong>Labib<br /></strong>
-      <img src="labib.jpg" alt="Labib's photo" width="200" />
+      <strong>Labib</strong><br />
+      <img src="labib.jpg" alt="Labib" />
     </li>
     <p>a7aa bb dyal lo3mr is soo cute ma9ditchhh 7anoun anouchi</p>
 
     <li>
-      <strong>hamza<br /></strong>
-      <img src="hamza.jpg" alt="hamza's photo" width="200" />
+      <strong>Hamza</strong><br />
+      <img src="hamza.jpg" alt="Hamza" />
     </li>
     <p>7cham bs7 chbab rajl feriel nemla mtdnach</p>
 
     <li>
-      <strong>hocine<br /></strong>
-      <img src="hocine.jpg" alt="hocine's photo" width="200" />
+      <strong>Hocine</strong><br />
+      <img src="hocine.jpg" alt="Hocine" />
     </li>
     <p>yzle9 bzaf khaseh ysyer ro7h, ytreba nchlh w yn9s besties</p>
 
     <h2>wifiess yjiboulk diabte men 7lawthoum</h2>
 
     <li>
-      <strong>wissem<br /></strong>
-      <img src="wissem.jpg" alt="wissem's photo" width="200" />
+      <strong>wissem</strong><br />
+      <img src="wissem.jpg" alt="wissem" />
     </li>
     <p>ana ouchy patrona</p>
 
     <li>
-      <strong>feriel<br /></strong>
-      <img src="feriel.jpg" alt="feriel's photo" width="200" />
+      <strong>feriel</strong><br />
+      <img src="feriel.jpg" alt="feriel" />
     </li>
     <p>omri ayyy zin w ras w zid wifey</p>
 
     <li>
-      <strong>maroua<br /></strong>
-      <img src="maroua.jpg" alt="maroua's photo" width="200" />
+      <strong>maroua</strong><br />
+      <img src="maroua.jpg" alt="maroua" />
     </li>
     <p>saydaliya, lhob body wesh na7kilk</p>
 
-    <!-- Floating hearts -->
-    <!-- Flying hearts -->
-<span class="heart" style="left: 5%;">❤️</span>
-<span class="heart" style="left: 15%;">❤️</span>
-<span class="heart" style="left: 25%;">❤️</span>
-<span class="heart" style="left: 35%;">❤️</span>
-<span class="heart" style="left: 45%;">❤️</span>
-<span class="heart" style="left: 55%;">❤️</span>
-<span class="heart" style="left: 65%;">❤️</span>
-<span class="heart" style="left: 75%;">❤️</span>
-<span class="heart" style="left: 85%;">❤️</span>
-<span class="heart" style="left: 95%;">❤️</span>
+  </section>
 
-<!-- Full-screen red heart rain -->
-<span class="heart" style="left: 5%; animation-duration: 5s; animation-delay: 0s;">❤️</span>
-<span class="heart" style="left: 15%; animation-duration: 6s; animation-delay: 2s;">❤️</span>
-<span class="heart" style="left: 25%; animation-duration: 4s; animation-delay: 1s;">❤️</span>
-<span class="heart" style="left: 35%; animation-duration: 7s; animation-delay: 3s;">❤️</span>
-<span class="heart" style="left: 45%; animation-duration: 5s; animation-delay: 1.5s;">❤️</span>
-<span class="heart" style="left: 55%; animation-duration: 6s; animation-delay: 2.5s;">❤️</span>
-<span class="heart" style="left: 65%; animation-duration: 4.5s; animation-delay: 1s;">❤️</span>
-<span class="heart" style="left: 75%; animation-duration: 7s; animation-delay: 2s;">❤️</span>
-<span class="heart" style="left: 85%; animation-duration: 6s; animation-delay: 0s;">❤️</span>
-<span class="heart" style="left: 95%; animation-duration: 5.5s; animation-delay: 1s;">❤️</span>
-<!-- You can copy more of these to add even more hearts! -->
+  <!-- Floating Hearts -->
+  <span class="heart" style="left: 5%; animation-delay: 0s;">❤️</span>
+  <span class="heart" style="left: 15%; animation-delay: 1s;">❤️</span>
+  <span class="heart" style="left: 25%; animation-delay: 2s;">❤️</span>
+  <span class="heart" style="left: 35%; animation-delay: 0.5s;">❤️</span>
+  <span class="heart" style="left: 45%; animation-delay: 1.5s;">❤️</span>
+  <span class="heart" style="left: 55%; animation-delay: 2.5s;">❤️</span>
+  <span class="heart" style="left: 65%; animation-delay: 1s;">❤️</span>
+  <span class="heart" style="left: 75%; animation-delay: 2s;">❤️</span>
+  <span class="heart" style="left: 85%; animation-delay: 0.2s;">❤️</span>
+  <span class="heart" style="left: 95%; animation-delay: 1.2s;">❤️</span>
 
+  <!-- Script -->
+  <script>
+    function startPage() {
+      const input = document.getElementById('password').value.trim().toLowerCase();
+      const error = document.getElementById('error');
 
-<!-- RAINING HEARTS -->
-<span class="heart" style="left: 2%; animation-duration: 6s; animation-delay: 0s;">❤️</span>
-<span class="heart" style="left: 7%; animation-duration: 5s; animation-delay: 1s;">❤️</span>
-<span class="heart" style="left: 12%; animation-duration: 6.5s; animation-delay: 2s;">❤️</span>
-<span class="heart" style="left: 17%; animation-duration: 5.5s; animation-delay: 0.5s;">❤️</span>
-<span class="heart" style="left: 22%; animation-duration: 7s; animation-delay: 1.5s;">❤️</span>
-<span class="heart" style="left: 27%; animation-duration: 6s; animation-delay: 3s;">❤️</span>
-<span class="heart" style="left: 32%; animation-duration: 4.5s; animation-delay: 1s;">❤️</span>
-<span class="heart" style="left: 37%; animation-duration: 6.5s; animation-delay: 2.5s;">❤️</span>
-<span class="heart" style="left: 42%; animation-duration: 5s; animation-delay: 0.3s;">❤️</span>
-<span class="heart" style="left: 47%; animation-duration: 7s; animation-delay: 1.2s;">❤️</span>
-<span class="heart" style="left: 52%; animation-duration: 5.8s; animation-delay: 2s;">❤️</span>
-<span class="heart" style="left: 57%; animation-duration: 6.2s; animation-delay: 1.8s;">❤️</span>
-<span class="heart" style="left: 62%; animation-duration: 5.1s; animation-delay: 0.7s;">❤️</span>
-<span class="heart" style="left: 67%; animation-duration: 6.9s; animation-delay: 2.2s;">❤️</span>
-<span class="heart" style="left: 72%; animation-duration: 4.8s; animation-delay: 1.3s;">❤️</span>
-<span class="heart" style="left: 77%; animation-duration: 5.7s; animation-delay: 0.6s;">❤️</span>
-<span class="heart" style="left: 82%; animation-duration: 6.4s; animation-delay: 2.1s;">❤️</span>
-<span class="heart" style="left: 87%; animation-duration: 5.2s; animation-delay: 1s;">❤️</span>
-<span class="heart" style="left: 92%; animation-duration: 6.3s; animation-delay: 0.9s;">❤️</span>
-<span class="heart" style="left: 97%; animation-duration: 5.5s; animation-delay: 1.4s;">❤️</span>
-
-<button onclick="toggleSparkles()">✨ Toggle Sparkles</button>
-
-<div id="sparkle-container"></div>
-
-<script>
-  const sparkleContainer = document.getElementById("sparkle-container");
-  let sparkleOn = false;
-
-  function toggleSparkles() {
-    sparkleOn = !sparkleOn;
-
-    if (sparkleOn) {
-      for (let i = 0; i < 20; i++) {
-        const sparkle = document.createElement("span");
-        sparkle.className = "sparkle";
-        sparkle.innerText = "✨";
-        sparkle.style.left = Math.random() * 100 + "%";
-        sparkle.style.animationDelay = Math.random() * 5 + "s";
-        sparkleContainer.appendChild(sparkle);
+      if (input === 'patronapapi') {
+        document.getElementById('cover').style.display = 'none';
+        document.getElementById('main').style.display = 'block';
+        document.getElementById('love-song').play();
+      } else {
+        error.textContent = 'Wrong password 😢 try again!';
       }
-    } else {
-      sparkleContainer.innerHTML = ""; // Remove all sparkles
     }
-  }
-</script>
+  </script>
 
-
-  </body>
+</body>
 </html>
