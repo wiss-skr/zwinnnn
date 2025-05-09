@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome Omri 💘</title>
+    <style>
+      body {
+        background-color: #ffd1dc;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        padding-top: 20%;
+      }
+
+      button {
+        background-color: #ff4d6d;
+        color: white;
+        padding: 20px 40px;
+        font-size: 24px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+
+      button:hover {
+        background-color: #e63950;
+      }
+    </style>
+  </head>
+  <body>
+
+    <audio id="love-song" src="love-romantic-hopeful-music-333017.mp3"></audio>
+
+    <button onclick="startExperience()">Click me Omri ❤️</button>
+
+    <script>
+      function startExperience() {
+        const music = document.getElementById('love-song');
+        music.play();
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 1000); // wait 1 second before changing page
+      }
+    </script>
+
+  </body>
+</html>
